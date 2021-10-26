@@ -1,5 +1,14 @@
-make server:
+server:
 	python3 manage.py runserver
 
-make app:
-	python3 manage.py startapp 
+makemigrations:
+	python3 manage.py makemigrations
+
+migrate:
+	python3 manage.py migrate
+
+shell:
+	python3 manage.py shell
+
+createsuperuser:
+	python3 manage.py createsuperuser
