@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body>  
+<main class="l-main">
+  <!--===== HOME =====-->
+  <section class="home bd-grid" id="home">
+      <div class="home__data">
+          <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Fredrick</span><br>Full Stack Developer</h1>
+      </div>
+
+      <div class="home__social">
+          <a href="https://www.linkedin.com/in/fredrick-wambua-0143a4197/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/FredrickWambua" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+      </div>
+
+      <div class="home__img">    
+          <img id="myimage" src="../static/images/myimage.jpg" alt="">
+      </div>
+  </section>
+
+  <!--===== ABOUT =====-->
+  <section class="about section " id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+          <div class="about__img">
+              <img id="myimage" src="./static/images/myimage.jpg" alt="">
+          </div>
+          
+          <div>
+              <h2 class="about__subtitle">I am Fredrick Wambua</h2>
+              <p class="about__text">I am a full stack software developer recently graduated from Moringa School. I am experienced in JavaScript and Python 
+                  Programming languages and also written code using the Object Oriented Programming. 
+                  I have done various projects using frameworks such as Django, Flask, Angular and 
+                  Django restframework. I have interacted with other technologies such as RESTful APIs,
+                    Bootstrap, UI/UX Design, PostgreSQL, Swagger API.          
+          </div>                                   
+      </div>
+  </section>
+
+  <!--===== SKILLS =====-->
+  <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">          
+          <div>
+              <h2 class="skills__subtitle">Profesional Skills</h2>
+              <p class="skills__text">In addition to creative and critical thinking, good communication and problem solving skills, These are some of the technical skills I have among others not listed.</p>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-javascript skills__icon'></i>
+                      <span class="skills__name">JAVASCRIPT</span>
+                  </div>
+                  <div class="skills__bar skills__html">
+
+                  </div>
+                  <div>
+                      <span class="skills__percentage">70%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-angular skills__icon'></i>
+                      <span class="skills__name">TYPESCRIPT/ANGULAR</span>
+                  </div>
+                  <div class="skills__bar skills__css">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">60%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-python skills__icon' ></i>
+                      <span class="skills__name">PYTHON/DJANGO</span>
+                  </div>
+                  <div class="skills__bar skills__js">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">55%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxs-flask skills__icon'></i>
+                      <span class="skills__name">PYTHON-FLASK</span>
+                  </div>
+                  <div class="skills__bar skills__ux">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">60%</span>
+                  </div>
+              </div>
+          </div>
+          
+          <div>              
+              <img src="../static/images/dynamicwebapp.jpg" alt="" class="skills__img">
+          </div>
+      </div>
+  </section>
+
+  <!--===== WORK =====-->
+  <section class="work section" id="projects">
+      <h2 class="section-title">WORK</h2>
+        <div class="container">
+            <div class="work__container bd-grid">
+                <div class="card">
+                  <h3 class="card-head">UI DESIGN</h3>
+                  <div class="work__img">
+                      <img src="../static/images/figma.png" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p>Creating wireframes and designs to be replicated on the code.</p><br>
+                      <a href="">View sample</a>
+                  </div>
+      
+                </div>
+                <div class="card">
+                  <h3 class="card-head">REST APIs</h3>
+                  <div class="work__img">
+                      <img src="../static/images/api.png" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p>Building and documenting APIs is a passion.</p><br>
+                      <a href="">View sample</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3 class="card-head">DYNAMIC WEB APPS</h3>
+                  <div class="work__img">
+                      <img src="../static/images/dynamicwebapp.jpg" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p>Developing dynamic and scalable web apps</p><br>
+                      <a href="">View sample</a>
+                  </div>
+                </div>
+                <a href="{% url 'projects' %}" class="btn btn-outline-success">View all projects</a>
+            </div>            
+        </div>
+      <p align='center' class="gitlink">To view these projects and many others, visit my github account and see the deployed links of the apps. <a href="https://github.com/FredrickWambua">Fredrick Wambua github account</a></p>
+  </section>
+</main>
+  <!-- end of about section -->
+</body>
+{% endblock %}
