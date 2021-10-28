@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'name',
+    'blog',
     'bootstrap4',
 ]
 
@@ -79,10 +80,10 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
 # Cloudinary configurations
 cloudinary.config(
-    cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
-    api_key=os.environ.get('API_KEY'),
-    api_secret=os.environ.get('API_SECRET'),
-
+    cloud_name = os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    api_key = os.environ.get('API_KEY'),
+    api_secret = os.environ.get('API_SECRET'),
+    cloudinary_url = os.environ.get('CLOUDINARY_URL'),
 )
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
