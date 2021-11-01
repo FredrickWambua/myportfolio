@@ -314,7 +314,6 @@ img{
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
-  border: solid 1px;
 
 }
 .work__img{
