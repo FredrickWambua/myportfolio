@@ -434,13 +434,12 @@ img{
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-  .home__img{
+  /* .home__img{
     width: 457px;
     bottom: 15%;
-  }
+  } */
   #myimage {
       border-radius: 50%;
-      border: solid 2px blue;
   }
 
   .about__container, .skills__container{
