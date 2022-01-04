@@ -224,6 +224,7 @@ img{
   right: 0;
   bottom: 0;
   width: 200px;
+  border-radius: 50%;
 }
 
 /*BUTTONS*/
@@ -252,7 +253,7 @@ img{
 }
 .about__img img{
   width: 200px;
-  border-radius: .5rem;
+  border-radius: 50%;
 }
 
 /* ===== SKILLS =====*/
