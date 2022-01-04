@@ -227,8 +227,8 @@ img{
   height: 200px;
 }
 
-#myimage{
-  border-radius: 50%;
+.home__img img{
+  border-radius: 50px;
 }
 
 /*BUTTONS*/
@@ -257,7 +257,7 @@ img{
 }
 .about__img img{
   width: 200px;
-  height: 200px;
+  border-radius: 50%;
 }
 
 /* ===== SKILLS =====*/
